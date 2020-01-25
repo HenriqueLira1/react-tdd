@@ -9,7 +9,9 @@
         "@types/jest": "^24.9.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
-        "react-scripts": "3.3.0"
+        "react-redux": "^7.1.3",
+        "react-scripts": "3.3.0",
+        "redux": "^4.0.5"
     },
     "scripts": {
         "start": "react-app-rewired start",
@@ -22,7 +24,8 @@
             "**/__tests__/**/*.test.js"
         ],
         "setupFilesAfterEnv": [
-            "@testing-library/jest-dom/extend-expect"
+            "@testing-library/jest-dom/extend-expect",
+            "jest-localstorage-mock"
         ],
         "moduleNameMapper": {
             "^~/(.*)": "<rootDir>/src/$1"
@@ -41,6 +44,7 @@
         ]
     },
     "devDependencies": {
+        "jest-localstorage-mock": "^2.4.0",
         "react-app-rewired": "^2.1.5"
     }
 }
